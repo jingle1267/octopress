@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://jingle1267.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Never say never
+subtitle: Stay hungry, stay foolish.
+author: Zhenguo
 simple_search: https://www.google.com/search
-description:
+description: About android's develop.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: jingle1267@163.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
