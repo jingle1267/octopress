@@ -1,0 +1,14 @@
+---
+layout: page
+title: "404 Error"
+date: 2013-4-21 02:35
+comments: false
+sharing: false
+footer: false
+---
+
+{% img /imgs/kidmondo_face_sad.gif %}  
+
+<h1>We're sorry...</h1>
+<p>The page or journal you are looking for cannot be found.</p>
+<p><a href="http://worthed.com">Return to the homepage</a></p>
