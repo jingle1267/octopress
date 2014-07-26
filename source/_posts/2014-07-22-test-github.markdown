@@ -14,7 +14,7 @@ categories:
 买到）。我选择这个设备是因为它可以通过开关按钮方便的添加和移除设备以及它价格便宜。
 <!--more-->
 
-![device](/imgs/android_usb_bus.jpg)
+![device](/imgs/post/android_usb_bus.jpg)
 
   将这个设备插到电脑上，然后把Android设备插到此线板上。然后我们就可以连接电脑通过命令行管理手机了。安装APK到Android设备我们需要在命令行输入以下命令：
 

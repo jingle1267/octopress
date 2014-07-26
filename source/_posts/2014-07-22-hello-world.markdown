@@ -50,4 +50,4 @@ Stewart and his team put out several issues of The Whole Earth Catalog, and then
 
 Thank you all very much.
 
-{% img /imgs/steve_jobs.jpg %}  
+{% img /imgs/post/steve_jobs.jpg %}  
