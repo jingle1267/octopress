@@ -24,25 +24,26 @@ keywords: Android切图,不规则图形，Android图像合并,Android不规则�
   第一张是我们切图系列文章的模特Betty。第二章是圆角矩形的浮层图像。这张绿色的浮层图像只是想让我们能够看到圆角矩形的形状（实际上是没有用的）。
 
   代码是很简单的：
+ 
+```
+public Bitmap combineImages(Bitmap bgd, Bitmap fg) {
+   	Bitmap bmp;
+   	int width = bgd.getWidth() > fg.getWidth() ? 
+       	bgd.getWidth() : fg.getWidth();
+   	int height = bgd.getHeight() > fg.getHeight() ? 
+       	bgd.getHeight() : fg.getHeight();
 
-	public Bitmap combineImages(Bitmap bgd, Bitmap fg) {
-    	Bitmap bmp;
+   	bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+   	Paint paint = new Paint();
+   	paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
 
-    	int width = bgd.getWidth() > fg.getWidth() ? 
-        	bgd.getWidth() : fg.getWidth();
-    	int height = bgd.getHeight() > fg.getHeight() ? 
-        	bgd.getHeight() : fg.getHeight();
+   	Canvas canvas = new Canvas(bmp);
+   	canvas.drawBitmap(bgd, 0, 0, null);
+   	canvas.drawBitmap(fg, 0, 0, paint);
 
-    	bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-    	Paint paint = new Paint();
-    	paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
-
-    	Canvas canvas = new Canvas(bmp);
-    	canvas.drawBitmap(bgd, 0, 0, null);
-    	canvas.drawBitmap(fg, 0, 0, paint);
-
-    	return bmp;
-	}
+   	return bmp;
+}
+```
 
   我们创建的新的Bitmap是源图和浮层图的最大值。***我们需要先画浮层图像然后用设置了PorterDuffXFerMode.SRC_STOP的Paint对象来画Betty***。最后结果如下图：
 
