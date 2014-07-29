@@ -17,5 +17,5 @@ I decided to write this blog because, while there is plenty of information regar
 It is assumed that the reader is familiar with Android development in general.
 
 
-You can contact me via email: <a href="mailto:jingle1267@163.com">jingle1267@163.com</a>
+You can contact me via email: <a href="mailto:jingle1267@163.com">jingle1267@163.com</a> and you can also follow me on [GitHub](https://github.com/jingle1267).
 

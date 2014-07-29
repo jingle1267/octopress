@@ -4,7 +4,7 @@ title: "Android切图之不规则形状-2"
 date: 2014-07-27 19:01:46 +0800
 comments: true
 categories: 
-keywords: Android切图,不规则图形，Android图像合并,Android不规则图形
+keywords: Android切图,不规则图形，Android图像合并,Android不规则图形,irregular shape
 ---
 
   上篇文章我们实现了用透明图片的方式来实现圆角切图。但是采用透明浮层的方法有很多问题不完全符合我们的要求。在这篇文章中我们采用一种不使用额外的图片的替代方案来实现相同的圆角图片的效果。

@@ -4,7 +4,7 @@ title: "Android切图之不规则形状-1"
 date: 2014-07-22 23:25:50 +0800
 comments: true
 categories: 
-keywords: Android切图,不规则图形，Android图像合并,Android不规则图形
+keywords: Android切图,不规则图形，Android图像合并,Android不规则图形,irregular shape
 ---
 
   不久之前，我被问到如何创建一个像WhatsApp中气泡消息一样的，图像边缘是不规则图形的图片。更多的关于不规则图形方面的知识将在接下来的一系列的《Android切图之不规则形状》中学习到。
