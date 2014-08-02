@@ -51,3 +51,5 @@ public Bitmap processImage(Bitmap bitmap) {
 
   就像我之前提过的，这种方法除了实现圆角外还可以实现很多非常赞的效果。在下一篇文章中我们将要实现像WhatsApp中一样的聊天消息形状的效果。
   
+  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)。
+  

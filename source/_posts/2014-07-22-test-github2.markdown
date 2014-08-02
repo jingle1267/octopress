@@ -57,7 +57,7 @@ public Bitmap combineImages(Bitmap bgd, Bitmap fg) {
 
   不过，值得庆幸的是，在接下来的文章中我会引入更高效的方法来实现我们想要的效果。
 
-  源码稍后附上。
+  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)。
 
 
 

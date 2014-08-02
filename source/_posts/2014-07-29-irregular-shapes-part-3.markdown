@@ -91,4 +91,4 @@ public Bitmap processImage(Bitmap bitmap) {
 
   在Android切图之不规则图形这个系列里面，我们下篇文章将通过其他方法实现一些复杂点的图形（其实如果我们把它拆解后会发现其实也很简答的哦）。
 
-  源码稍后给出。
+  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)。
