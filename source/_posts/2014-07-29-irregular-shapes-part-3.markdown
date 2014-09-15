@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android切图之不规则形状-3"
+title: "Android切图之不规则形状-3 [译]"
 date: 2014-07-29 22:03:31 +0800
 comments: true
 categories: 
@@ -91,4 +91,4 @@ public Bitmap processImage(Bitmap bitmap) {
 
   在Android切图之不规则图形这个系列里面，我们下篇文章将通过其他方法实现一些复杂点的图形（其实如果我们把它拆解后会发现其实也很简答的哦）。
 
-  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)。
+  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)，英文原版[地址](http://blog.stylingandroid.com/irregular-shapes-part-3/)。

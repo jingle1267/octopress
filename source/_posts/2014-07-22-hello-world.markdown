@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Stay hungry, stay foolish"
+title: "Stay hungry, stay foolish [Strong Recommend]"
 date: 2014-07-22 22:16:21 +0800
 comments: true
 categories: 
-keywords: stay hungry,stay foolish,stay hungry stay foolish
+keywords: stay hungry,stay foolish,stay hungry stay foolish,Steve Jobs
 ---
 
 From Stanford Report, June 14, 2005 

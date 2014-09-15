@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android切图之不规则形状-4"
+title: "Android切图之不规则形状-4 [译]"
 date: 2014-08-02 13:01:50 +0800
 comments: true
 categories: 
@@ -113,7 +113,9 @@ canvas.drawPath(region.getBoundaryPath(), paint);
 
   虽然我们本系列文章都是来讲解不规则图形切图的，但是我们用到的技术不仅仅局限于图片。我们也可以用这写技术来实现立体的，多彩的和渐变等等的效果。最后说一下，作为轻量级的图片裁剪技术，本系列文章算是比较节省系统开销。
 
-  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)。
+  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)，英文原版[地址](http://blog.stylingandroid.com/irregular-shapes-part-4/)。
+
+  
 
 
 

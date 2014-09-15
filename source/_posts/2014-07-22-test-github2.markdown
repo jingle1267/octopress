@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android切图之不规则形状-1"
+title: "Android切图之不规则形状-1 [译]"
 date: 2014-07-22 23:25:50 +0800
 comments: true
 categories: 
@@ -57,9 +57,7 @@ public Bitmap combineImages(Bitmap bgd, Bitmap fg) {
 
   不过，值得庆幸的是，在接下来的文章中我会引入更高效的方法来实现我们想要的效果。
 
-  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)。
-
-
+  切图之不规则图形系列[源码下载](/download/StylingAndroid-irregular-shapes.zip)，英文原版[地址](http://blog.stylingandroid.com/irregular-shapes-part-1/)。
 
 参考内容：
 --------
