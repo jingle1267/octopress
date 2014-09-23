@@ -64,6 +64,7 @@ PS: 我没有采用任何第三方的库(除了JSON数据解析库GSON和测试�
 
 未完待续 ...
 
+  原文地址：[Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)
 
 
 
