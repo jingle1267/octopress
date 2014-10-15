@@ -8,7 +8,7 @@ footer: true
 ---
 
 
-I am Zhenguo Jin, a software developer with over 4 years’ experience, and over 2 years’ Android development experience. I am currently working for <a href="http://www.keeeweee.com/" target="_blank">KeeeWeee</a> as a Senior Android Developer.
+I am Zhenguo Jin, a software developer with over 4 years’ experience, and over 3 years’ Android development experience. I am currently working for <a href="http://www.keeeweee.com/" target="_blank">KeeeWeee</a> as a Senior Android Developer.
 
 I have a keen interested in the latest emerging technologies. I use my spare time to turn my experience, ideas and love for Android tech into informative articles, tutorials and more in hope to help others and learn more.
 
