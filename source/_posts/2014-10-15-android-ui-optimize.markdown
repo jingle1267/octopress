@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "android ui optimize"
+title: "Android UI优化策略"
 date: 2014-10-15 17:57:53 +0800
 comments: true
 categories: 
