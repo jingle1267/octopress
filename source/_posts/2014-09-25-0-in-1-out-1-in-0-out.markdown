@@ -15,7 +15,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   使用if-else判断来处理。比较简单，代码如下。
 
-```
+``` java
 	public int reverse1(int input) {
 		if (input == 0) {
 			return 1;
@@ -31,7 +31,7 @@ keywords: 输入1则输出0,输入0则输出1
   
   跟方法二差不多，用while循环来做，其他代码不变。
 
-```
+``` java
 	public int reverse2(int input) {
 		while (input == 1) {
 			return 0;
@@ -44,7 +44,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   使用switch-case来实现。
 
-```
+``` java
 	public int reverse3(int input) {
 		switch (input) {
 		case 1:
@@ -61,7 +61,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   使用三目运算符。
 
-```
+``` java
 	public int reverse4(int input) {
 		return input == 1 ? 0 : 1;
 	}
@@ -71,7 +71,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   将传入的值减1，然后去绝对值。
 
-```
+``` java
 	public int reverse5(int input) {
 		return Math.abs(input - 1);
 	}
@@ -81,7 +81,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   将传入的值加1取除以2的余数。
 
-```
+``` java
 	public int reverse6(int input ) {
 		return (input + 1) % 2;
 	}
@@ -91,7 +91,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   与1异或。
 
-```
+``` java
 	public int reverse7(int input) {
 		return input^1;
 	}
@@ -101,7 +101,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   减去2，然后取补码。
 
-```
+``` java
 	public int reverse8(int input) {
 		return ~(input - 2);
 	}
@@ -111,7 +111,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   用0和1的和减去输入值。
 
-```
+``` java
 	public int reverse9(int input) {
 		return 1 - input;
 	}
@@ -121,7 +121,7 @@ keywords: 输入1则输出0,输入0则输出1
 
   表驱动方法。
 
-```
+``` java
 	public int reverse10(int input) {
 		int[] values = {1, 0};
 		if (input == 0 || input == 1) {

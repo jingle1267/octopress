@@ -16,37 +16,37 @@ keywords: Android切图,不规则图形，Android图像合并,Android不规则�
 
   为了画一个三角形我们首先需要创建Path对象：
 
-```
+``` java
 Path triangle = new Path();
 ```
 
   然后我们使用moveTo()来吧起点移动到开始位置。在我们的需求中，我们需要把起点移动到Canvas左边缘并向下一点点。这个点是气泡消息的三角形的最外侧的一个一个点：
 
-```
+``` java
 triangle.moveTo(0, TRIANGLE_OFFSET);
 ```
 
   然后我们需要使用lineTo()方法画一条线。这条线起点是我们用moveTo()方法设定的点，终点是圆角矩形的边界。这条线需要向上倾斜：
 
-```
+``` java
 triangle.lineTo(TRIANGLE_WIDTH, TRIANGLE_OFFSET - (TRIANGLE_HEIGHT / 2));
 ```
 
   再然后，我们需要用lineTo()方法画第二条线。这次我们希望最后的一条线是向下倾斜的，所以我们需要把终点选择在起点（moveTo()确定的点）一下：
 
-```
+``` java
 triangle.lineTo(TRIANGLE_WIDTH, TRIANGLE_OFFSET + (TRIANGLE_HEIGHT / 2));
 ```
 
   最后，我们画最后一条线来完成整个三角形。一般来说，我们会选择从lineTo()最终的点直接画线到moveTo()的点。但是，有更简单的方法：close()。这个方法可以帮助我们自动完成多边形最后一遍的绘制。代码如下：
 
-```
+``` java
 triangle.close();
 ```
 
   现在我们的三角形也画好了，我们剩下的唯一需要做的就是用Shader把三角形画到Canvas上。完整方法如下：
 
-```
+``` java
 private static final float RADIUS_FACTOR = 8.0f;
 private static final int TRIANGLE_WIDTH = 120;
 private static final int TRIANGLE_HEIGHT = 100;

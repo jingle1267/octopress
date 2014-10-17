@@ -26,7 +26,7 @@ keywords: Android Log工具类,LogUtils,LogHelper,Log
 
 实现方法是采用<code>StackTraceElement</code>获取调用类的方法，代码如下：
 
-```
+``` java
 private static String getClassName() {
 	String result = "";
 	StackTraceElement thisMethodStack = (new Exception()).getStackTrace()[2];
@@ -39,7 +39,7 @@ private static String getClassName() {
 
 实现双击Log跳转到Java源代码调用处，实现方法是参考Android Logcat错处日志，发现Eclipse实现跳转是因为Log中有<code>at MyClassName.MyMethodName(MClassName.java:行数)</code>。具体见代码：
 
-```
+``` java
 /**
  * Realization of double click jump events.
  * 
@@ -68,14 +68,14 @@ private static String callMethodAndLine() {
 
 只需要用LogUtils替换掉Android系统的Log类，并去掉log方法的第一个参数，例如：
 
-```
+``` java
 LogUtils.d(Object); // 次行代码将打印Object类的toString()
 ```
 
 
 无代码无真相，下面是此工具类源码：
 
-```
+``` java
 /**
  * Copyright 2014 Zhenguo Jin
  *

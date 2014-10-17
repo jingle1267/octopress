@@ -62,7 +62,7 @@ PS: 我没有采用任何第三方的库(除了JSON数据解析库GSON和测试�
 
 ###数据层
 
-未完待续 ...
+咱不翻译此文，后续日期未定 ...
 
   原文地址：[Architecting Android…The clean way?](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)
 

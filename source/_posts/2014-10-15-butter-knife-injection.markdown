@@ -13,7 +13,7 @@ keywords: Butter Knife,Injection,View注入,Butter Knife Injection,View注入框
 
 注意：如果你是使用的Eclipse引用该library，你需要参考这里[Eclipse Configuration](http://jakewharton.github.io/butterknife/ide-eclipse.html)做一些配置，否则会运行出错。
 
-```
+``` java
 class ExampleActivity extends Activity {
   TextView title;
   TextView subtitle;
@@ -33,7 +33,7 @@ class ExampleActivity extends Activity {
 
 而用ButterKnife之后的代码是这样的：
 
-```
+``` java
 class ExampleActivity extends Activity {
   @InjectView(R.id.title) TextView title;
   @InjectView(R.id.subtitle) TextView subtitle;
@@ -67,7 +67,7 @@ class ExampleActivity extends Activity {
 
 #####在Activity中注入#####
 
-```
+``` java
 class ExampleActivity extends Activity {
   @InjectView(R.id.title) TextView title;
   @InjectView(R.id.subtitle) TextView subtitle;
@@ -84,7 +84,7 @@ class ExampleActivity extends Activity {
 
 #####在Fragment中注入#####
 
-```
+``` java
 public class FancyFragment extends Fragment {
   @InjectView(R.id.button1) Button button1;
   @InjectView(R.id.button2) Button button2;
@@ -100,7 +100,7 @@ public class FancyFragment extends Fragment {
 
 #####在ViewHolde模式中注入#####
 
-```
+``` java
 public class MyAdapter extends BaseAdapter {
   @Override public View getView(int position, View view, ViewGroup parent) {
     ViewHolder holder;
@@ -132,7 +132,7 @@ public class MyAdapter extends BaseAdapter {
 
 下面是集中注入回调函数的方法实例：
 
-```
+``` java
 // 带有 Button 参数
 @OnClick(R.id.submit)
 public void sayHi(Button button) {
@@ -160,7 +160,7 @@ public void pickDoor(DoorView door) {
 
 如果需要在 界面 销毁的时候，把注入的 View 设置为 Null， 则可以用 reset 函数：
 
-```
+``` java
 public class FancyFragment extends Fragment {
   @InjectView(R.id.button1) Button button1;
   @InjectView(R.id.button2) Button button2;
@@ -181,7 +181,7 @@ public class FancyFragment extends Fragment {
 
 另外还支持可选的view注入，如果该view没有，就没有吧：
 
-```
+``` java
 @Optional @InjectView(R.id.might_not_be_there) TextView mightNotBeThere;
  
 @Optional @OnClick(R.id.maybe_missing) void onMaybeMissingClicked() {
@@ -191,7 +191,7 @@ public class FancyFragment extends Fragment {
 
 还有两个 findViewById 函数来简化查找 View 的方式，如果上面都满足不了你的需求，你可以用用他们：
 
-```
+``` java
 View view = LayoutInflater.from(context).inflate(R.layout.thing, null);
 TextView firstName = Views.findById(view, R.id.first_name);
 TextView lastName = Views.findById(view, R.id.last_name);

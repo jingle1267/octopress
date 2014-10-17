@@ -9,7 +9,7 @@ keywords: findViewById,ViewFinder,android find view,find view
 
 在Android获取一个View一般都是通过如下方式：
 
-```
+``` java
 TextView textView = (TextView) findViewById(R.id.textview);
 ```
 
@@ -21,7 +21,7 @@ TextView textView = (TextView) findViewById(R.id.textview);
 
 在项目基类BaseActivity中添加如下函数:
 
-```
+``` java
 @SuppressWarnings(“unchecked”)
 public final <E extends View> E getView (int id) {
     try {
@@ -35,11 +35,15 @@ public final <E extends View> E getView (int id) {
 
 然后就可以通过如下方式获取view了：
 
-```
+``` java
 TextView textView = getView(R.id.textview);
 Button button = getView(R.id.button);
 ImageView image = getView(R.id.imageview);
+```
+
 注意：如果级联调用getView 函数，则还是需要Cast的，如下示例：
+
+``` java
 private static void myMethod (ImageView img) {
     //Do nothing
 }
@@ -55,7 +59,7 @@ public void onCreate (Bundle savedInstanceState) {
 
 第一种方法只在Activity里有效，其实我们经常在其他View或者Fragment里也常用findViewById方法，当然你可以把上述方法copy一遍，但是这违反了面向对象基本的封装原则，有大神封装了一个ViewFinder类，具体代码可以见我Gist上的文件[ViewFinder.java](https://gist.github.com/jingle1267/5d2ba7c14f5db6d87571), 使用的时候你只需要在你的Activity或者View里这样使用:
 
-```
+``` java
 ViewFinder finder = new ViewFinder(this);
 TextView textView = finder.find(R.id.textview);
 ```

@@ -25,7 +25,7 @@ keywords: Android切图,不规则图形，Android图像合并,Android不规则�
 
   代码是很简单的：
  
-```
+``` java
 public Bitmap combineImages(Bitmap bgd, Bitmap fg) {
    	Bitmap bmp;
    	int width = bgd.getWidth() > fg.getWidth() ? 

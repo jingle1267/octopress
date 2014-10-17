@@ -18,7 +18,7 @@ keywords: Android切图,不规则图形，Android图像合并,Android不规则�
 
   在开始画心形图案之前，我们需要设置我们的BitmapShader, Canvas和Paint对象：
 
-```
+``` java
 Bitmap bmp;
 
 bmp = Bitmap.createBitmap(bitmap.getWidth(),
@@ -35,14 +35,14 @@ paint.setShader(shader);
 
   因为下一步计算需要，我们需要把Bitmap的宽和高保存起来：
 
-```
+``` java
 float width = bitmap.getWidth();
 float height = bitmap.getHeight();
 ```
 
   为了画心形，我们还需要创建Path, Matrix和Regiond对象。我们也可以把在用的时候单独创建。
 
-```  
+``` java
 Path oval = new Path();
 Matrix matrix = new Matrix();
 Region region = new Region();
@@ -50,14 +50,14 @@ Region region = new Region();
 
   有了前面的准备工作，接下来我们来画心形。首先我们需要做的是定义一个矩形用来画椭圆。矩形位于Bitmap的水平正中间位置，高度和Bitmap的高度相同，宽度是Bitmap的3/4：
 
-```
+``` java
 RectF ovalRect = new RectF(width / 8, 0,
     width - (width / 8), height);
 ```
 
   接下来，我们在定义好的矩形中画椭圆：
 
-```  
+``` java
 oval.addOval(ovalRect, Path.Direction.CW);
 ```
 
@@ -66,7 +66,7 @@ oval.addOval(ovalRect, Path.Direction.CW);
 ![oval_betty](/imgs/post/oral_betty.jpg)
   下一步我们需要做的是将椭圆旋转30度。我们需要使用之前创建的Matrix对象来实现旋转。使用Matrix，我们可以将物体进行各种变换，还可以通过一些辅助方法实现一些基本的方法。在我们的例子中，我们需要以椭圆中心为轴旋转30度：
 
-```
+``` java
 matrix.postRotate(30, width / 2, height / 2);
 oval.transform(matrix, oval);
 ```
@@ -77,7 +77,7 @@ oval.transform(matrix, oval);
 
   值得注意的一点：我们不需要全部的椭圆，只需要右侧的一半就行了。所以，我们用之前创建的Region对象来裁剪椭圆。Region代表矩形区域。下面来截取右侧的部分：
 
-```
+``` java
 region.setPath(oval, new Region((int)width / 2, 0, 
 (int)width, (int)height));
 canvas.drawPath(region.getBoundaryPath(), paint);
@@ -89,14 +89,14 @@ canvas.drawPath(region.getBoundaryPath(), paint);
 
   接下来我们需要画另外一部分：
 
-```
+``` java
 matrix.reset();
 oval.reset();
 ```
 
   接下来重复之前的操作，画左侧的部分：
 
-```
+``` java
 oval.addOval(ovalRect, Path.Direction.CW);
 matrix.postRotate(-30, width / 2, height / 2);
 oval.transform(matrix, oval);
