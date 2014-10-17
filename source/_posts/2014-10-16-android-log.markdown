@@ -9,18 +9,18 @@ keywords: Android Log工具类,LogUtils,LogHelper,Log
 
 工欲善其事，必先利其器。在Android开发过程中，相信都会遇到这样的问题：
 
- * Log太多，不容易找到自己设置打印的内容
- * 找到Log但是定位到Java源码有不是很方便
- * 对Log打印需要设置Tag，大多时候Tag就是本类的类名，存在重复的工作
- * 发布正式版本需要注释或者关掉很多Log开关
+*   Log太多，不容易找到自己设置打印的内容
+*   找到Log但是定位到Java源码有不是很方便
+*   对Log打印需要设置Tag，大多时候Tag就是本类的类名，存在重复的工作
+*   发布正式版本需要注释或者关掉很多Log开关
  
 <!--more-->
  
 参考Android源码，使用官方的Log打印方法（设置Tag），然后再Eclipse里面设置过滤标签，这样就可以查看某一个类的Log了，但是这样效率比较低下。基于上面的一些问题，我研究实现了一种简单易用的Log工具类。我的工具类主要有如下特点：
 
- * 减少一个Log参数
- * 调用某些Log方法，可以实现跳转到Java源代码的功能
- * 采用此工具类，屏蔽Log只需要关闭Log总开关即可
+* 减少一个Log参数
+* 调用某些Log方法，可以实现跳转到Java源代码的功能
+* 采用此工具类，屏蔽Log只需要关闭Log总开关即可
  
 ###减少一个Log参数###
 
@@ -60,9 +60,9 @@ private static String callMethodAndLine() {
 
 采用[LogUtils](https://github.com/jingle1267/android-utils/blob/master/src/com/worthed/util/LogUtils.java)工具类，只需要将此类中<code>DEBUG_LEVEL</code>设置的值大一点。
 
- * 如果想要屏蔽所有的Log只需要将<code>DEBUG_LEVEL</code>设置为<code>Log.ASSERT</code>即可。
- * 如果想要只显示Error则只需要将<code>DEBUG_LEVEL</code>设置为<code>Log.WARN</code>即可。
- * 如果只想要显示Error和Warn则将<code>DEBUG_LEVEL</code>设置为<code>Log.INFO</code>即可。
+* 如果想要屏蔽所有的Log只需要将<code>DEBUG_LEVEL</code>设置为<code>Log.ASSERT</code>即可。
+* 如果想要只显示Error则只需要将<code>DEBUG_LEVEL</code>设置为<code>Log.WARN</code>即可。
+* 如果只想要显示Error和Warn则将<code>DEBUG_LEVEL</code>设置为<code>Log.INFO</code>即可。
 
 ##使用方法##
 
