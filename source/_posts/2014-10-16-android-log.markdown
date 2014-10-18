@@ -9,10 +9,10 @@ keywords: Android Log工具类,LogUtils,LogHelper,Log
 
 工欲善其事，必先利其器。在Android开发过程中，相信都会遇到这样的问题：
 
-*   Log太多，不容易找到自己设置打印的内容
-*   找到Log但是定位到Java源码有不是很方便
-*   对Log打印需要设置Tag，大多时候Tag就是本类的类名，存在重复的工作
-*   发布正式版本需要注释或者关掉很多Log开关
+* Log太多，不容易找到自己设置打印的内容
+* 找到Log但是定位到Java源码有不是很方便
+* 对Log打印需要设置Tag，大多时候Tag就是本类的类名，存在重复的工作
+* 发布正式版本需要注释或者关掉很多Log开关
  
 <!--more-->
  
@@ -24,7 +24,7 @@ keywords: Android Log工具类,LogUtils,LogHelper,Log
  
 ###减少一个Log参数###
 
-实现方法是采用<code>StackTraceElement</code>获取调用类的方法，代码如下：
+实现方法是采用 <code>StackTraceElement</code> 获取调用类的方法，代码如下：
 
 ``` java
 private static String getClassName() {
@@ -37,7 +37,7 @@ private static String getClassName() {
 
 ###跳转到源代码Log调用处###
 
-实现双击Log跳转到Java源代码调用处，实现方法是参考Android Logcat错处日志，发现Eclipse实现跳转是因为Log中有<code>at MyClassName.MyMethodName(MClassName.java:行数)</code>。具体见代码：
+实现双击Log跳转到Java源代码调用处，实现方法是参考Android Logcat错处日志，发现Eclipse实现跳转是因为Log中有 <code>at MyClassName.MyMethodName(MClassName.java:行数)</code> 。具体见代码：
 
 ``` java
 /**
@@ -58,11 +58,11 @@ private static String callMethodAndLine() {
 
 ###屏蔽所有Log###
 
-采用[LogUtils](https://github.com/jingle1267/android-utils/blob/master/src/com/worthed/util/LogUtils.java)工具类，只需要将此类中<code>DEBUG_LEVEL</code>设置的值大一点。
+采用 [LogUtils](https://github.com/jingle1267/android-utils/blob/master/src/com/worthed/util/LogUtils.java) 工具类，只需要将此类中<code>DEBUG_LEVEL</code>设置的值大一点。
 
-* 如果想要屏蔽所有的Log只需要将<code>DEBUG_LEVEL</code>设置为<code>Log.ASSERT</code>即可。
-* 如果想要只显示Error则只需要将<code>DEBUG_LEVEL</code>设置为<code>Log.WARN</code>即可。
-* 如果只想要显示Error和Warn则将<code>DEBUG_LEVEL</code>设置为<code>Log.INFO</code>即可。
+* 如果想要屏蔽所有的Log只需要将 <code>DEBUG_LEVEL</code> 设置为 <code>Log.ASSERT</code> 即可。
+* 如果想要只显示Error则只需要将 <code>DEBUG_LEVEL</code> 设置为 <code>Log.WARN</code> 即可。
+* 如果只想要显示Error和Warn则将 <code>DEBUG_LEVEL</code> 设置为 <code>Log.INFO</code> 即可。
 
 ##使用方法##
 
@@ -432,4 +432,4 @@ public class LogUtils {
 ```
 
 
-获取更多请参看我Github分享的Android工具类库[android-utils](https://github.com/jingle1267/android-utils)。
+获取更多请参看我Github分享的Android工具类库 [android-utils](https://github.com/jingle1267/android-utils) 。
