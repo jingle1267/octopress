@@ -25,3 +25,82 @@
     text-decoration: underline; 
 }
 // license end
+
+// background start
+html {
+        background: #555555 url("/images/background.jpg");
+        //background: #555555;
+}
+
+body > div {
+        background-image: none;
+        //background: #F5F5D5
+} //侧边栏
+
+body > div > div { //文章内容
+        background-image: none;
+        //background: #F5F5D5; 
+        //background: url("/images/bg.jpg");
+}
+// background end
+
+// header start
+//html {
+//  body > header {
+//    background: none;
+//  padding: 1.6em 0 1em 0;
+//  h1 {
+//      @include text-shadow(0px 1px 0px #999, 0px 2px 0px #888, 
+//0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 
+//0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135);
+//    }
+//    h2 {
+//      margin-top: .5em;
+//      display: none;
+//    }
+//  }
+//}
+// header end
+
+body > nav {
+  //background: url("/images/nav.jpg");
+  //background: #555555;
+  ul.main-navigation {
+    padding-left: 3px;
+  }
+  ul.subscription {
+    //display: none;
+  }
+  a {
+    &:hover {
+      color: hsl(220.01, 86.94%, 80.04%);
+      text-shadow:
+        hsl(220.01, 80.94%, 62.04%) 0px 0px 5px,
+        hsl(220.01, 80.94%, 62.04%) 0px 0px 7px,
+        hsl(220.01, 80.94%, 62.04%) 0px 0px 9px,
+        hsl(220.01, 80.94%, 62.04%) 0px 0px 11px,
+        hsl(0, 0%, 0%) 0 0 2px;
+
+    }
+    i {
+      color: hsl(100.01, 86.94%, 50.04%);
+      text-shadow:
+        hsl(100.01, 86.94%, 42.04%) 0px 0px 5px,
+        hsl(100.01, 86.94%, 42.04%) 0px 0px 7px,
+        hsl(100.01, 86.94%, 52.04%) 0px 0px 9px,
+        hsl(100.01, 86.94%, 52.04%) 0px 0px 11px,
+        hsl(0, 0%, 0%) 0 0 2px;
+    }
+  }
+}
+
+//@media only screen and (min-width: 1040px) {
+//  body > nav {
+//    @include border-top-radius(.4em);
+//  }
+
+//  body > footer {
+//    @include border-bottom-radius(.4em);
+//  }
+//}
+
