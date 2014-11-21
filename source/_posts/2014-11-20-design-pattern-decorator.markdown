@@ -3,7 +3,7 @@ layout: post
 title: "装饰者模式"
 date: 2014-11-20 21:53:20 +0800
 comments: true
-categories: 
+categories: 设计模式
 keywords: Decorator Pattern,装饰者模式,Decorator
 ---
 
