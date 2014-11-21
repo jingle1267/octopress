@@ -3,7 +3,7 @@ layout: post
 title: "Android切图之不规则形状-2 [译]"
 date: 2014-07-27 19:01:46 +0800
 comments: true
-categories: 
+categories: Android不规则图形专题
 keywords: Android切图,不规则图形，Android图像合并,Android不规则图形,irregular shape
 ---
 
