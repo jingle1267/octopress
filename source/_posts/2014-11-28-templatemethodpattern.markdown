@@ -3,7 +3,7 @@ layout: post
 title: "模板方法模式"
 date: 2014-11-28 21:57:22 +0800
 comments: true
-categories: 设计模式和
+categories: 设计模式
 keywords: 模板方法模式, Template Method, 设计模式
 ---
 

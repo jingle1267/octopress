@@ -3,7 +3,7 @@ layout: post
 title: "观察者模式"
 date: 2014-12-01 18:03:15 +0800
 comments: true
-categories: 
+categories: 设计模式
 keywords: 观察者模式, Observer Pattern, 设计模式, Design Pattern
 ---
 
