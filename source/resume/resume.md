@@ -11,7 +11,7 @@
  - 靳振国 / 男 / 1990 
  - 本科 / 南阳理工学院 / 软件工程 
  - 工作年限： 3年
- - 技术博客： http://worthed.com
+ - 技术博客： http://ihongqiqu.com.com
  - Github： http://github.com/jingle1267
 
  - 期望职位： Android高级程序员，应用架构师
@@ -67,9 +67,9 @@
 
 ## 技术文章
 
-- [Android切图之不规则形状-4 [译]](http://worthed.com/blog/2014/08/02/irregular-shapes-part-4/)
-- [Android切图之不规则形状-1 [译]](http://worthed.com/blog/2014/07/22/test-github2/)
-- [快速安装APK到多台设备](http://worthed.com/blog/2014/07/22/test-github/)
+- [Android切图之不规则形状-4 [译]](http://ihongqiqu.com/blog/2014/08/02/irregular-shapes-part-4/)
+- [Android切图之不规则形状-1 [译]](http://ihongqiqu.com/blog/2014/07/22/test-github2/)
+- [快速安装APK到多台设备](http://ihongqiqu.com/blog/2014/07/22/test-github/)
 
 ---
 

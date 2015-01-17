@@ -11,12 +11,12 @@ footer: false
 
 <h1>We're sorry...</h1>
 <p>The page or journal you are looking for cannot be found.</p>
-<p><a href="http://worthed.com">Return to the homepage</a></p>
+<p><a href="http://ihongqiqu.com">Return to the homepage</a></p>
 
 <script type="text/javascript">
 setTimeout("jump()",5000);
  
 function jump(){
-    window.location.href="http://worthed.com";
+    window.location.href="http://ihongqiqu.com";
 }
 </script>
