@@ -49,7 +49,7 @@ rake generate
 ```
 rake preview
 ```
-  输入了上面这条指令，然后就可以直接访问localhost:4000来进行预览。
+  输入了上面这条指令，然后就可以直接访问[http://localhost:4000](http://localhost:4000)来进行预览。
 
 ### 5.发布博文
 
