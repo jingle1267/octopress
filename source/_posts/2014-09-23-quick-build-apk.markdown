@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android快速打包"
+title: "Android快速打包[手动]"
 date: 2014-09-23 21:06:33 +0800
 comments: true
 categories: 
@@ -20,5 +20,7 @@ keywords: Android快速打包,快速打包APK,快速打包,Android,打包多渠�
  * 4.签名.   例如：jarsigner -verbose -keystore ezhuo_releasekey.releasekey -signedjar e-Zhuo_25100_v1.2.6.apk ./cache/dist/e-Zhuo_25000_v1.2.6.apk ezhuo
 
   APKTool可以到Google[官网下载](https://code.google.com/p/android-apktool/)或APKTool1.5.2 [本地下载](/download/apktool1.5.2.rar)
+	
+Ant批量打包：[http://ihongqiqu.com/blog/2015/05/18/make-packages/](http://ihongqiqu.com/blog/2015/05/18/make-packages/)
 	
   如有任何问题可以留言或者<a href="mailto:jingle1267@163.com">邮件联系我</a>，多谢。

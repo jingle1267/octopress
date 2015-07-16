@@ -3,7 +3,7 @@ layout: post
 title: "Ant批量打包APK"
 date: 2015-05-18 17:55:21 +0800
 comments: true
-categories: 
+categories: Android
 keywords: 批量打包, Ant批量打包, Mac环境Ant批量打包
 ---
 
